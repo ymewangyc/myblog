@@ -5,3 +5,5 @@ __pycache__/*
 django/cmdb/cmdb/__pycache__/*
 blogproject/.idea/workspace.xml
 .idea/
+*.bak
+*.pyc
