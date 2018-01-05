@@ -16,6 +16,7 @@
     <orderEntry type="jdk" jdkName="Python 3.5.2 virtualenv at C:\Users\x318\blogproject_env" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="python" />
+    <orderEntry type="module" module-name="myblog" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
