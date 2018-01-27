@@ -5,3 +5,4 @@ python manage.py createsuperuser
 邮箱：x318@qq.com
 密码：x318qaz12
 jiali
+xiugaijiali
