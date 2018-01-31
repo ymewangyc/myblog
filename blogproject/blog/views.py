@@ -15,6 +15,7 @@ def index(request):
         'welcome':'欢迎访问我的博客首页'
     })
 '''
+from django.shortcuts import render
 from .models import Post
 
 def index(request):
