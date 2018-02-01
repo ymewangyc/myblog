@@ -1,14 +1,11 @@
 # coding: utf-8
 
-# from django.db import models
+from django.db import models
 from django.contrib.auth.models import User
-
+from django.urls import reverse
 from django.utils.six import python_2_unicode_compatible
 
 # python_2_unicode_compatible 装饰器用于兼容 Python2
-
-# Create your models here.
-from django.db import models
 
 # 文章（Post）、分类（Category）以及标签（Tag）
 
@@ -43,5 +40,8 @@ class Post(models.Model):
     author = models.ForeignKey(User)
     def __str__(self):
         return self.title
-
+    # 自定义 get_absolute_url 方法
+    # 记得从 django.urls 中导入 reverse 函数
+    def get_absolute_url(self):
+        return reverse('blog:detail', kwargs={'pk': self.pk})
 
